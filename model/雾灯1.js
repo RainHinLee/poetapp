@@ -254,6 +254,7 @@ module.exports = [
 			'从金色的小镇赶回',
 			'彩虹没有少年高'
 		]
+<<<<<<< HEAD
 	},		
 	{
 		title:"走失的水牛",
@@ -289,6 +290,10 @@ module.exports = [
 			'我的时光寂静，充满泉声'
 		]
 	},			
+=======
+	},	
+
+>>>>>>> refs/remotes/origin/master
 ]
 
 	/*

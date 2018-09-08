@@ -17,7 +17,6 @@ module.exports = [
 			'立马吴山第一峰。'		
 	 	]
 	},		
-	
 	{
 	 	title:"所见 袁枚",
 	 	body:[

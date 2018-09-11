@@ -6,10 +6,11 @@ var favicon = require('koa-favicon');
 var path = require('path');
 var fs = require('fs');
 var swig = require('swig');
-var models = require('./model/index.js')
+var models = require('./model/index.js');
 
 var app = koa();
 var port = '18080';
+
 //--
 app.name = 'poetapp'; 
 app.use(serve('static'));  //---设置静态文件目录

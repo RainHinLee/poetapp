@@ -216,7 +216,6 @@ module.exports = [
 			'一星如月看多时。'		
 	 	]
 	},
-	
 	{
 	 	title:"少年行",
 	 	body:[
@@ -226,7 +225,6 @@ module.exports = [
 			'宝刀明月共辉光。'			
 	 	]
 	},
-
 	{
 	 	title:"春兴",
 	 	body:[
@@ -561,7 +559,7 @@ module.exports = [
 	 	]
 	},		 
 	{
-	 	title:"江晴 清·郑燮 ",
+	 	title:"江晴 郑燮 ",
 	 	body:[
 			'雾裹山疑失，',
 			'雷鸣雨未休。',

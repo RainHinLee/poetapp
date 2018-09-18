@@ -1,5 +1,5 @@
 
-var CACHE_NAME = "poet_v41"; // 用于标注创建的缓存，也可以根据它来建立版本规范
+var CACHE_NAME = "poet_v41"; //    用于标注创建的缓存，也可以根据它来建立版本规范
 
 var cacheFiles=[
 	'/',

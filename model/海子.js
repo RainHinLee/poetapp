@@ -23,7 +23,6 @@ module.exports = [
 			"小溪"
 		]
 	},	
-	
 	{
 		title:'感动',
 		body:[
@@ -51,7 +50,6 @@ module.exports = [
 			"一只踩人的花鹿"
 		]
 	},
-	
 	{
 		title:'月',
 		body:[
@@ -67,7 +65,6 @@ module.exports = [
 			"月亮早已心碎"
 		]
 	},
-	
 	{
 		title:'海水没顶',
 		body:[
@@ -84,7 +81,6 @@ module.exports = [
 			"雪白的头发在燃烧"
 		]
 	},
-	
 	{
 		title:'北方门前',
 		body:[
@@ -101,7 +97,6 @@ module.exports = [
 			"她看得我浑身美丽"	
 		]
 	},
-	
 	{
 		title:'民间艺人',
 		body:[
@@ -119,7 +114,6 @@ module.exports = [
 			"摸黑吃下高粱饼"
 		]
 	},
-	
 	{
 		title:'为了美丽',
 		body:[
@@ -139,7 +133,6 @@ module.exports = [
 			"戴一只黑帽子"
 		]
 	},
-	
 	{
 		title:'五月的麦地',
 		body:[
@@ -161,7 +154,6 @@ module.exports = [
 			"没有了眼睛也没有了嘴唇"
 		]
 	},	
-	
 	{
 		title:'晨雨时光',
 		body:[
@@ -181,7 +173,6 @@ module.exports = [
 			"我定会孤独返回空无一人的山峦"
 		]
 	},
-	
 	{
 		title:'光棍',
 		body:[

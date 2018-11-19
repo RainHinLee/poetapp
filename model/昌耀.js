@@ -14,7 +14,6 @@ module.exports = [
 			"吮吸一朵野玫瑰的芳香……"
 		]
 	},
-
 	{
 		title:'广板：暮',
 		body:[	

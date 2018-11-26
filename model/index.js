@@ -53,13 +53,7 @@ window.models = {
 			hash : 'juzhai',
 			body: __inline('./精彩句摘.js')
 		},		
-	},
-		
-	'散文小品':{
-		'戴名世' : {
-			hash : 'daimingshi',
-			body: __inline('./戴名世.js')			
-		}
+	}
 	},
 	
 	'唐诗宋词':{

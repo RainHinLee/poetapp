@@ -4,7 +4,7 @@
   "author": "bae",
   "description": "The first bae nodejs app!",
   "scripts": {
-    "start": "node server.js"
+    "release": "fis3 release --dest ../server --watch"
   },
   "dependencies": {
     "jssha": "^2.3.0"

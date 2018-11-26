@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" id='viewport' content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Poet</title>
+	<link rel="manifest" href="static/libs/manifest.json" />
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_543473_t82wxkwgzic9dx6r.css" />
+	<link rel="stylesheet" href="static/style/mobile.css">
+	<script src="model/index.js"></script>
+</head>
+<body>
+	<div class="side">
+		<div class='menu'>
+			<div class='main'>
+				<ul></ul>				
+			</div>
+			<div class='sub'>
+				<ul></ul>
+			</div>
+		</div>
+		
+		<div class="mask"></div>
+		<div class="close"><i class='iconfont icon-close-o'></i></div>
+	</div>
+
+	
+	<div class="header">
+		<p><i class='iconfont icon-view-list-o'></i></p>
+	</div>
+	<div class="body">
+		<ul></ul>
+	</div>
+</body>
+<script src="static/libs/zepto.js"></script>
+<script src="static/libs/spine.js"></script>
+<script>
+
+
+	var Controller = Spine.Controller.sub({
+			elements:{
+				'.side' : 'side',
+				'.sub ul' : 'itemsBox',
+				'.sub li' : 'items',
+				'.main ul' : 'menu',
+				'.main li' : 'mainItems',
+				'.body>ul' : 'box',
+			},
+			
+			events:{
+				'touchend .header>p' : 'showSide',
+				'touchend .mask' : 'closeSide',
+				'touchend .close' : 'closeSide',
+				'touchend .main li' : 'changeItems',
+				'touchend .sub li' : 'change',	
+			},
+			
+			showSide(){ //--打开菜单
+				this.side.addClass('active');
+			},
+			
+			closeSide:function (){ //--关闭菜单
+				this.side.removeClass('active');
+			},
+			
+			changeItems:function (ev){ //--改变导航项
+				var el = $(ev.currentTarget);
+				var key = el.attr('data-key');
+				var data = models[key];
+				
+				textArr = Object.keys(data).map(item=>{
+					var value = data[item];
+					return `<li data-hash='${value.hash}'>${item}</li>`;
+				});
+				
+				this.mainItems.removeClass('active');
+				el.addClass('active');
+				
+				this.itemsBox.html(textArr.join(''));			
+				this.refresh();
+				this.data = data;
+			},
+			
+			change:function (ev){
+				var el = $(ev.currentTarget);
+				var hash = el.attr('data-hash');
+				
+				if(el.hasClass('active')){
+					return;
+				};
+				
+				this.items.removeClass('active')
+				el.addClass('active');
+				document.location.hash = hash;				
+			},
+			
+			refresh:function (){
+				this.el.off();
+				this.refreshElements();
+				this.delegateEvents (this.events);
+			},
+			
+			hashChange:function (){  //---监听hash值变动
+				var hash = document.location.hash.slice(1);
+				var data = Object.values(this.data).find(item=>item.hash==hash);
+				
+				if(!data){
+					return 
+				}
+				
+				textArr = data.body.map(item=>{
+					var text= `<li><h3>${item.title}</h3>`;
+					item.body.forEach(item1=>{
+						text+=`<p>${item1}</p>`;
+					});
+					return text+=`</li>`;
+				});	
+				this.box.html(textArr.join(''))	;
+				this.closeSide();
+			},
+			
+			renderMenu(){
+				let textArr = Object.keys(window.models).map(item=>{
+					return `<li data-key="{{item}}">{{item}}</li>`
+				});
+				
+				this.menu.html(textArr.join(''));
+				this.refreshElements();
+				this.delegateEvents(this.events);
+			},
+			
+			init:function (){
+				window.addEventListener('hashchange',this.hashChange.bind(this));
+				this.renderMenu();
+				this.changeItems({currentTarget:this.mainItems.get(0)});
+				this.change({currentTarget: this.items.get(0)});
+				this.hashChange();
+			}
+	});
+	
+	new Controller({el:$('body')})
+	
+</script>

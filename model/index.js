@@ -53,9 +53,7 @@ window.models = {
 			hash : 'juzhai',
 			body: __inline('./精彩句摘.js')
 		},		
-	}
 	},
-	
 	'唐诗宋词':{
 		'唐绝句选':{
 			hash : 'tangjuejuxuan',

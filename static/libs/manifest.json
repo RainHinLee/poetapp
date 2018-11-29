@@ -4,33 +4,33 @@
   "display": "standalone",
   "description":"Learn Chinese online at Hanbridge Mandarin!",
   "start_url": "/",
-  "theme_color": "#8888ff",
-  "background_color": "#aaaaff",
+  "theme_color": "#CFB6A5",
+  "background_color": "#fff",
   "icons": [
   	{
   		"src": "/static/images/lauch.png",
 			"type": "image/png",
 			"sizes": "192x192"
   	},
-  	
+
   	{
   		"src": "/static/images/lauch.png",
 			"type": "image/png",
 			"sizes": "144x144"
   	},
-  	
+
    	{
   		"src": "/static/images/lauch.png",
 			"type": "image/png",
 			"sizes": "96x96"
-  	}, 
-  
+  	},
+
   	{
   		"src": "/static/images/lauch.png",
 			"type": "image/png",
 			"sizes": "72x72"
-  	}, 
- 
+  	},
+
   	{
   		"src": "/static/images/lauch.png",
 			"type": "image/png",

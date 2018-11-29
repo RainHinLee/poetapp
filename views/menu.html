@@ -1,0 +1,123 @@
+
+<style>
+	.menu{
+		position:fixed;
+		width:100%;
+		height:calc(100% - 50px);
+		left:0px;
+		top:50px;
+		transition:200ms ease;
+		z-index:10;
+		transform:translateY(20%);
+		opacity:0;
+		visibility: hidden;
+	}
+	.menu.is-active{
+		transform:translateY(0px);
+		opacity:1;
+		visibility: visible;
+	}
+	.menu .mask{
+		position:absolute;
+		left:0px;
+		top:0px;
+		z-index:1;
+		width:100%;
+		height:100%;
+		background:rgba(0,0,0,0.3);
+	}
+
+	.menu ul{
+		position:relative;
+		padding:10px;
+		z-index:2;
+		display:flex;
+		flex-wrap:wrap;
+		min-height: 300px;
+		background:#fff;
+	}
+	.menu ul li{
+		padding: 10px;
+	}
+	.menu ul li.is-active{
+		color: #CFB6A5
+	}
+</style>
+
+<aside class="menu">
+	<ul></ul>
+	<div class="mask"></div>
+</aside>
+
+<script>
+	(function (){
+		var Controller = Spine.Controller.sub({
+			elements:{
+				'ul li' : 'items'
+			},
+
+			events:{
+				'click ul li' : 'change'
+			},
+
+			change(ev){
+				var el = $(ev.currentTarget);
+				var hash = el.attr('data-route');
+				window.router.addHash(hash);
+				window.dispatcher.trigger('menu:hide');
+			},
+
+			show(){
+				this.el.addClass('is-active');
+			},
+
+			hide(){
+				this.el.removeClass('is-active');
+			},
+
+			render(){
+				var textArr = Object.keys(window.models).map(item=>{
+							var value = window.models[item];
+							return `<li data-route="${value.hash}">${item}</li>`
+				});
+				this.el.find('ul').html(textArr.join(''))
+				this.refresh();
+				this.inited || this.initClick();
+			},
+
+			refresh(){
+				this.refreshElements();
+				this.el.off();
+				this.delegateEvents(this.events);
+			},
+
+			initClick(){
+				var hash = this.items.eq(0).attr('data-route');
+				document.location.hash = hash;
+				this.inited = true;
+			},
+
+			hashChange(){
+				this.items.removeClass('is-active');
+				this.items.each(function (){
+					var el = $(this)
+					var hash = el.attr('data-route');
+					window.router.containHash(hash) && el.addClass('is-active');
+				})
+			},
+
+			init(){
+				this.listenTo(window.dispatcher,'menu:show',this.show.bind(this));
+				this.listenTo(window.dispatcher,'menu:hide',this.hide.bind(this));
+				this.listenTo($(window),'hashchange',this.hashChange.bind(this))
+				this.render();
+			}
+		});
+
+		window.addEventListener('load',function (){
+			new Controller({el:$('.menu')});
+		});
+
+	})()
+
+</script>

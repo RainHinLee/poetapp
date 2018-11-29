@@ -1,0 +1,84 @@
+
+<style>
+	.header{
+		position:fixed;
+		left:0px;
+		top:0px;
+		width:100%;
+		height:50px;
+		background:#CFB6A5;
+		padding:0px 15px;
+		display:flex;
+		align-items:center;
+		justify-content:space-between;
+		z-index:8;
+		box-shadow: 0px 1px 6px #ccc;
+		overflow: hidden;
+		color:#efefef;
+	}
+
+	.header p i:nth-of-type(2){
+		display:none
+	}
+
+	.header p.is-active i:nth-of-type(2){
+		display:inline-block
+	}
+	.header p.is-active i:nth-of-type(1){
+		display:none
+	}
+	.header div{
+		font-size:18px
+	}
+
+</style>
+
+<header class="header">
+	<div></div>
+	<p>
+		<i class='iconfont icon-view-list-o'></i>
+		<i class='iconfont icon-close-o'></i>
+	</p>
+</header>
+
+<script>
+
+(function (){
+	var Controller = Spine.Controller.sub({
+			elements:{
+				'p' : 'menuBox',
+				'div' : 'title'
+			},
+			events:{
+				'click p' : 'toggleMenu'
+			},
+
+			toggleMenu(){  //--展开
+				if(this.menuBox.hasClass('is-active')){
+					window.dispatcher.trigger('menu:hide');
+				}else{
+					window.dispatcher.trigger('menu:show');
+				}
+			},
+
+			hashChange(){
+				let title = Object.keys(window.models).find(key=>{
+					let value = window.models[key];
+					return window.router.containHash(value.hash);
+				});
+				this.title.html(title)
+			},
+
+			init(){
+				this.listenTo(window.dispatcher,"menu:hide",()=>this.menuBox.removeClass('is-active'));
+				this.listenTo(window.dispatcher,"menu:show",()=>this.menuBox.addClass('is-active'));
+
+				$(window).on('hashchange',this.hashChange.bind(this));
+			}
+	});
+
+	window.addEventListener('load',function (){
+		new Controller({el:$('.header')})
+	});
+})()
+</script>

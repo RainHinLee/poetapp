@@ -63,7 +63,7 @@
 			change(ev){
 				var el = $(ev.currentTarget);
 				var hash = el.attr('data-route');
-				window.router.addHash(hash);
+				document.location.hash = hash
 				window.dispatcher.trigger('menu:hide');
 			},
 

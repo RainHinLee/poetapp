@@ -1,7 +1,7 @@
 module.exports={
-	"绝句选":{
+	"元明清绝句":{
 		hash: 'juejuxuan',
 		author: '群星',
-		body: __inline('./唐绝句选.js')
+		body: __inline('./元明清绝句.js')
 	}
 }

@@ -31,6 +31,7 @@
 		box-shadow: 0px 1px 6px #ccc;
 		overflow: hidden;
 		color:#efefef;
+    z-index: 20;
   }
 
   .screen-header p{
@@ -46,7 +47,7 @@
   }
 
   .screen-body{
-    background:rgba(255,255,255,0.7);
+    background:rgba(255,255,255,1);
     flex:1;
     padding: 30px 15px;
     display:flex;
@@ -64,16 +65,17 @@
   }
 
   .screen-body p{
-    padding: 3px 0px;
-		min-height:20px;
+    padding: 1px 0px;
+		min-height:18px;
     letter-spacing:3px;
-    font-size:16px;
+    font-size:18px;
+		
   }
   .screen-block{
     position relative;
     z-index:10;
     height:50px;
-    background:rgba(255,255,255,0.7);
+    background:rgba(255,255,255,1);
   }
 
   .screen-footer{

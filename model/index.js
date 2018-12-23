@@ -16,6 +16,9 @@ window.models = {
 		hash: 'ymqing_poets',
 		body: __inline('./元明清/index.js')
 	},		
-		
+	'自考知识':{
+		hash: 'zikao_poets',
+		body: __inline('./自考知识/index.js')
+	},			
 		
 }

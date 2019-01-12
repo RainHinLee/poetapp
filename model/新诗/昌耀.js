@@ -14,7 +14,6 @@ module.exports = [
 			"吮吸一朵野玫瑰的芳香……"
 		]
 	},
-
 	{
 		title:'广板：暮',
 		body:[	
@@ -28,7 +27,6 @@ module.exports = [
 			"倒扣在石岸宿命的白塔。"
 		]
 	},
-
 	{
 		title:'峨日朵雪峰之侧',
 		body:[	
@@ -61,7 +59,6 @@ module.exports = [
 			"却习惯于偷偷地斜睇！"
 		]
 	},	
-	
 	{
 		title:'雕塑',
 		body:[	
@@ -346,7 +343,6 @@ module.exports = [
 			"初雪的滋昧。"
 		]
 	},	
-
 	{
 		title:'激流',
 		body:[	
@@ -359,7 +355,6 @@ module.exports = [
 			"是立在屋脊的黄河子民对东方太阳热烈传呼。"
 		]
 	},
-
 	{
 		title:'哈拉库图人与钢铁',
 		body:[	
@@ -376,7 +371,6 @@ module.exports = [
 			"正借千里明镜举足练步。"
 		]
 	},
-
 	{
 		title:'踏着蚀洞斑驳的岩原',
 		body:[	
@@ -393,7 +387,6 @@ module.exports = [
 			"沉重有如恋人之咯血。"
 		]
 	},
-	
 	{
 		title:'这是赭黄色的土地',
 		body:[		
@@ -408,7 +401,6 @@ module.exports = [
 			"土地啊！"
 		]
 	},
-
 	{
 		title:'荒甸',
 		body:[	
@@ -422,7 +414,6 @@ module.exports = [
 			"情窦初开的磷光……"
 		]
 	},
-	
 	{
 		title:'筏子客',
 		body:[	
@@ -444,7 +435,6 @@ module.exports = [
 			"走向山巅辉煌的小屋。"
 		]
 	},	
-	
 	{
 		title:'夜行在西部高原',
 		body:[	
@@ -462,7 +452,6 @@ module.exports = [
 			"过后又忽地吹灭了……"
 		]
 	},	
-	
 	{
 		title:'凶年逸稿一',
 		body:[	
@@ -476,7 +465,6 @@ module.exports = [
 			"都是一盏盏清亮的油灯。"
 		]
 	},	
-	
 	{
 		title:'晨兴：走向土地与牛',
 		body:[	
@@ -487,7 +475,6 @@ module.exports = [
 			"走向土地与牛的那个早起的劳动者更美好。"
 		]
 	},
-	
 	{
 		title:'天空',
 		body:[	
@@ -501,7 +488,6 @@ module.exports = [
 			"一此刻，谁会为之不悦？"
 		]
 	},	
-	
 	{
 		title:'古老的要塞炮',
 		body:[	
@@ -512,7 +498,6 @@ module.exports = [
 			"仅闭拢一只眼睛休憩。"
 		]
 	},	
-
 	{
 		title:'断章',
 		body:[	
@@ -524,7 +509,6 @@ module.exports = [
 			"胸腔复唤起摇撼的风涛。"
 		]
 	},	
-
 	{
 		title:'酿造麦酒的黄昏',
 		body:[	
@@ -539,7 +523,6 @@ module.exports = [
 			"扎麻什克人迎回了自己的春神。"
 		]
 	},	
-
 	{
 		title:'草原初章',
 		body:[	
@@ -560,7 +543,6 @@ module.exports = [
 			"心的独白。"
 		]
 	},	
-
 	{
 		title:'海头',
 		body:[	
@@ -573,7 +555,6 @@ module.exports = [
 			"赤脚追赶昆仑红日。"
 		]
 	},
-	
 	{
 		title:'冰河期',
 		body:[	
@@ -584,7 +565,6 @@ module.exports = [
 			"如在温习他们黄金般的吆喝。"
 		]
 	},	
-	
 	{
 		title:'无题',
 		body:[	
@@ -596,7 +576,6 @@ module.exports = [
 			"想必仍在荒没的田园撒播……"
 		]
 	},	
-	
 	{
 		title:'无题',
 		body:[	
@@ -607,7 +586,6 @@ module.exports = [
 			"这才舒出一口长气，道一声儿喜。"
 		]
 	},	
-	
 	{
 		title:'题古陶',
 		body:[	
@@ -623,7 +601,6 @@ module.exports = [
 			"优郁地告我以生活的艰辛。"
 		]
 	},	
-	
 	{
 		title:'伞之忆',
 		body:[	
@@ -633,7 +610,6 @@ module.exports = [
 			"常葆鲜绿。"
 		]
 	},
-	
 	{
 		title:'莽原',
 		body:[	
@@ -655,7 +631,6 @@ module.exports = [
 			"这块被偏见冷落了的荒土？"
 		]
 	},	
-	
 	{
 		title:'丹噶尔',
 		body:[	
@@ -679,7 +654,6 @@ module.exports = [
 			"我因此而记住了你古老的名字！"
 		]
 	},
-	
 	{
 		title:'关于云雀',
 		body:[	
@@ -701,7 +675,6 @@ module.exports = [
 			"或是夏夜的月光奏鸣。"
 		]
 	},	
-	
 	{
 		title:'日出',
 		body:[	
@@ -719,7 +692,6 @@ module.exports = [
 			"从东方的渊底沙沙地迫近。"
 		]
 	},	
-	
 	{
 		title:'子夜车',
 		body:[	
@@ -734,7 +706,6 @@ module.exports = [
 			"允我五分钟不得入眠！"
 		]
 	},
-	
 	{
 		title:'月下',
 		body:[	
@@ -753,8 +724,6 @@ module.exports = [
 			"陶醉。"
 		]
 	},	
-	
-	
 	{
 		title:'所思：在西部高原',
 		body:[	
@@ -796,7 +765,6 @@ module.exports = [
 			"有我的黄铜茶炊。"
 		]
 	},
-	
 	{
 		title:'在敦煌名胜地听驼铃寻唐梦',
 		body:[	
@@ -819,7 +787,6 @@ module.exports = [
 			"在石窟那边款款奏着铜锣钹呢？"
 		]
 	},	
-	
 	{
 		title:'戈壁纪事',
 		body:[	
@@ -838,7 +805,6 @@ module.exports = [
 			"康熙帝的梦城已相去遥远。"
 		]
 	},
-	
 	{
 		title:'野桥',
 		body:[		
@@ -860,7 +826,6 @@ module.exports = [
 			"和一只沟金的船。",
 		]
 	},
-	
 	{
 		title:'听曾侯乙编钟奏《楚殇》',
 		body:[	
@@ -877,7 +842,6 @@ module.exports = [
 			"早去远了……"
 		]
 	},
-	
 	{
 		title:'驿途：落日在望',
 		body:[	
@@ -891,7 +855,6 @@ module.exports = [
 			"一峰连夜兼程的骆驼。"
 		]
 	},
-	
 	{
 		title:'腾格里沙漠的树',
 		body:[	
@@ -907,7 +870,6 @@ module.exports = [
 			"弯起的双臂，像依依的柳。"
 		]
 	},	
-	
 	{
 		title:'人·花与黑陶砂罐',
 		body:[	
@@ -916,13 +878,11 @@ module.exports = [
 			"在妻的拈握中迟疑了许久：",
 			"窗台上实无可落脚的地方了。",
 			"",
-			
 			"让她们生长在各自的枝干上原不好吗？",
 			"何必让她们痛苦？",
 			"何必让她们绝望、孤独、饥渴、涕零？",
 			"妻说：你别管。",
 			"",
-			
 			"窗台，那陶罐被一束鲜花罩住深不可测的渊口。",
 			"我见不到渊底的一潭寒水了……",
 			"听不到渊底欸乃一声的舟橹了……",
@@ -931,7 +891,6 @@ module.exports = [
 			'总要为人生妒？……'
 		]
 	},	
-	
 	{
 		title:'达坂雪霁远眺',
 		body:[	
@@ -944,7 +903,6 @@ module.exports = [
 			"碰撞的黑脊背与云影碰撞在沟壑茂草的枯黄。"
 		]
 	},
-
 	{
 		title:'山旅',
 		body:[	

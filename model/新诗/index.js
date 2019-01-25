@@ -9,36 +9,29 @@ module.exports={
 		author: '雾灯',
 		body: __inline('./山中短章.js')
 	},
-// 	"昌耀":{
-// 		hash: 'changyao',
-// 		author: '昌耀',
-// 		body: __inline('./昌耀.js')
-// 	},
+	"新诗名作":{
+		hash: 'mingzuo',
+		author: '群星',
+		body: __inline('./新诗名作.js')
+	},	
+	"雪山短歌":{
+		hash: 'mahua',
+		author: '马骅',
+		body: __inline('./雪山短歌.js')
+	},	
+	"昌耀":{
+		hash: 'changyao',
+		author: '昌耀',
+		body: __inline('./昌耀.js')
+	},
 // 	"海子":{
 // 		hash: 'haizi',
 // 		author: '海子',
 // 		body: __inline('./海子.js')
 // 	},
-// 	"雪山短歌":{
-// 		hash: 'mahua',
-// 		author: '马骅',
-// 		body: __inline('./雪山短歌.js')
-// 	},
-// 	"北野":{
-// 		hash: 'beiye',
-// 		author: '北野',
-// 		body: __inline('./北野.js')
-// 	},
-// 	"王家新":{
-// 		hash: 'wangjiaxin',
-// 		author: '王家新',
-// 		body: __inline('./王家新.js')
-// 	},	
-// 	"新诗名作":{
-// 		hash: 'mingzuo',
-// 		author: '群星',
-// 		body: __inline('./新诗名作.js')
-// 	},
+
+
+
 // 	"余光中":{
 // 		hash: 'yuguangzhong',
 // 		author: '余光中',

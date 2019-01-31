@@ -143,7 +143,7 @@
           this.scroller =  new BScroll(this.body.get(0),{click:true});
           $(window).on('hashchange',this.hashChange.bind(this));
         }
-    })
+    });
 
     window.addEventListener('load',function (){
       new Controller({el:$('.screen')});

@@ -11,15 +11,11 @@ window.models = {
 	'元明清诗':{
 		hash: 'ymqing_poets',
 		body: __inline('./元明清/index.js')
-	},		
-	'自考知识':{
-		hash: 'zikao_poets',
-		body: __inline('./自考知识/index.js')
-	},		
-// 	'唐诗':{
-// 		hash: 'tang_poets',
-// 		body: __inline('./唐诗/index.js')
-// 	},
+	},			
+	'唐诗':{
+		hash: 'tang_poets',
+		body: __inline('./唐诗/index.js')
+	},
 	
 		
 // 		

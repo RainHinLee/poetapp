@@ -1,0 +1,12 @@
+{
+  "name": "bae-nodejs",
+  "version": "1.0.0",
+  "author": "bae",
+  "description": "The first bae nodejs app!",
+  "scripts": {
+    "release": "fis3 release --dest ../server --watch"
+  },
+  "dependencies": {
+    "jssha": "^2.3.0"
+  }
+}

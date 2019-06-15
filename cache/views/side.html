@@ -1,0 +1,122 @@
+<!-- 左边项 -->
+<style>
+  .side{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#F0F0F0;
+    border-right:2px solid #efefef;
+  }
+
+  .side li{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-bottom:1px solid #d9d9d9;
+    font-size:16px;
+    height:40px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+  }
+  .side li.is-active{
+    color:#CFB6A5
+  }
+
+</style>
+
+<div class='side'>
+  <ul></ul>
+</div>
+
+<script>
+
+  (function (){
+    var Controller = Spine.Controller.sub({
+          elements:{
+            'ul' : 'box',
+            'ul li' : 'items',
+          },
+
+          events:{
+            'click ul li' : 'change'
+          },
+
+          render(){
+            var data = this.data;
+            var textArr = Object.keys(data.body).map(key=>{
+                var value = data.body[key];
+                var path = data.hash + "&" + value.hash;
+                return `<li data-route="${path}">${key}</li>`;
+            });
+            this.box.html(textArr.join(''));
+            this.refresh();
+            this.initClick();
+          },
+
+          change(ev){
+            var hash = $(ev.currentTarget).attr('data-route');
+            document.location.hash = hash;
+          },
+
+          changeClassname(){ //--激活选项
+            this.items.removeClass('is-active');
+            this.items.each(function (){
+              var hash = $(this).attr('data-route');
+              window.router.containHash(hash) && $(this).addClass('is-active');
+            })
+          },
+
+          refresh(){
+            this.refreshElements();
+            this.el.off();
+            this.delegateEvents(this.events);
+            this.scroller.refresh();
+          },
+
+          initClick(){
+						var hashs = document.location.hash.slice(1).split('&');
+    				var hash = this.items.eq(0).attr('data-route');
+						
+						if(hashs.length==1){
+							var url = document.location.origin +"#" + hash
+							document.location.replace(url);
+						}
+    			},
+
+          hashChange(){ //--hash变动
+            var target = Object.values(window.models).find(item=>{
+              return window.router.containHash(item.hash);
+            }) || {};
+            this.data = target;
+            target.hash && this.render();
+            this.changeClassname(); //--选项激活
+          },
+
+          init(){
+            this.scroller =  new BScroll(this.el.get(0),{click:true});
+            $(window).on('hashchange',this.hashChange.bind(this));
+          }
+    });
+
+    window.addEventListener('load',function (){
+			new Controller({el: $('.side')})
+		});
+
+  })()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

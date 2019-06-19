@@ -15,7 +15,7 @@
 		body{
 			padding: 50px; 
 			font-family:"宋体";
-			font-size: 15px;
+			font-size: 20px;
 			background: rgb(255,252,250);
 		}
 		
@@ -26,17 +26,19 @@
 		}
 		
 		li{
-			padding: 30px 0px;
+			padding: 70px 0px;
 			border-bottom: 1px solid #dbdbdb;
 		}
 
 		h3{
-			font-size:17px;
-			padding-bottom: 10px;
+			font-size:24px;
+			padding-bottom: 20px;
+			color:#CFB6A5
 		}
 		p{
 			line-height:1.2;
 			min-height:15px;
+			font-size: 20px;
 		}
 		
 	</style>
@@ -57,5 +59,7 @@
 		arr.push("</li>");
 		return arr.join("");
 	});
+	
 	document.querySelector('ul').innerHTML=texts.join('')
+	
 </script>

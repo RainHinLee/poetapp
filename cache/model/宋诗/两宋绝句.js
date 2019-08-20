@@ -610,7 +610,6 @@ module.exports = [
 			'杨花只是一春忙。'				
 	 	]
 	},		 
-
 	{
 	 	title:"绝句 吴涛",
 	 	body:[
@@ -620,7 +619,6 @@ module.exports = [
 			'又作东风十日寒。'			
 	 	]
 	},		 
-
 	{
 	 	title:"春游湖 徐俯",
 	 	body:[
@@ -630,7 +628,6 @@ module.exports = [
 			'小舟撑出柳阴来。'
 	 	]
 	},		 
-
 	{
 	 	title:"栖禅暮归书所见 唐庚",
 	 	body:[
@@ -640,7 +637,6 @@ module.exports = [
 			'湖尽得孤亭。'			
 	 	]
 	},		 
-
 	{
 	 	title:"早发",
 	 	body:[
@@ -650,7 +646,6 @@ module.exports = [
 			'缓步徐行静不哗。'			
 	 	]
 	},		 
-
 	{
 	 	title:"蜡梅 高荷",
 	 	body:[
@@ -731,8 +726,7 @@ module.exports = [
 			'梧桐真不甘衰谢，',
 			'数叶迎风尚有声。'			
 	 	]
-	},		 
-	 
+	},		  
 	{
 	 	title:"初见嵩山 张耒",
 	 	body:[

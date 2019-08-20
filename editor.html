@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.editor{
+				width: 600px;
+				height:300px;
+				margin:0px auto;
+				border: 1px solid #ccc;
+				outline: none;
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="editor" contenteditable="true" placeholder="点击此处输入">
+			<div></div>
+		</div>
+	</body>
+</html>
+<script>
+	var el = document.querySelector(".editor");
+	document.execCommand("defaultParagraphSeparator", false, "div");
+
+	el.oninput= function (){
+		let arr = [];
+		let children = Array.from(el.childNodes);
+		
+		if(children.length==0){
+			el.innerHTML="<div></div>"
+		}
+	}
+	
+</script>
